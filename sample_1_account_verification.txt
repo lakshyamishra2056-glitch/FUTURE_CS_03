@@ -1,0 +1,31 @@
+SAMPLE 1 — ACCOUNT VERIFICATION PHISHING
+Classification: PHISHING (High Risk)
+
+--- Simulated Header ---
+Return-Path: <bounce@secure-account-verify.com>
+Received: from mail.secure-account-verify.com [45.33.12.88]
+SPF: FAIL (domain does not designate 45.33.12.88 as a permitted sender)
+DKIM: none
+From: Security Team <support@secure-account-verify.com>
+Reply-To: alerts@verify-helpdesk-online.com
+Subject: ⚠️ Urgent: Your Account Will Be Locked
+
+--- Email Body ---
+Dear User,
+
+We noticed suspicious activity on your account.
+To avoid account suspension, please verify your details immediately.
+
+Verify Now: http://secure-account-verify[.]com
+
+Failure to verify within 24 hours will result in permanent account lock.
+
+Regards,
+Security Team
+
+--- Indicators Identified ---
+1. Sender domain unrelated to any real organisation.
+2. SPF authentication fails.
+3. Urgency / fear-based language ("immediately", "permanent lock", "24 hours").
+4. Generic greeting ("Dear User").
+5. Defanged link formatting unusual for genuine business email.

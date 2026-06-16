@@ -1,0 +1,31 @@
+SAMPLE 2 — FAKE BANK CARD SUSPENSION ALERT
+Classification: PHISHING (High Risk)
+
+--- Simulated Header ---
+Return-Path: <noreply@hdfcbank-secure-verify.in>
+Received: from unknown [103.21.58.4] (no rDNS)
+SPF: FAIL
+DKIM: FAIL
+Envelope-From: hdfcbank-secure-verify.in
+Subject: Your Debit Card Has Been Temporarily Blocked
+
+--- Email Body ---
+Dear Customer,
+
+Your debit card ending in 4521 has been temporarily suspended due to
+unusual login attempts from a new device.
+
+To reactivate your card, click below and confirm your card number,
+expiry date, CVV and net banking PIN within 2 hours, or the block
+will become permanent.
+
+Reactivate My Card: hdfcbank-secure-verify.in/reactivate
+
+HDFC Bank Security Division
+
+--- Indicators Identified ---
+1. Look-alike domain imitating a real bank, not the bank's actual domain.
+2. Direct request for CVV and net banking PIN (no real bank asks for this by email).
+3. Artificial urgency with a 2-hour deadline.
+4. Generic "Dear Customer" greeting with a partially shown card number.
+5. Both SPF and DKIM authentication checks fail.

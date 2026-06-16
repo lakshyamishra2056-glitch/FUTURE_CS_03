@@ -1,0 +1,30 @@
+SAMPLE 5 — INTERNAL-LOOKING HR REQUEST
+Classification: SUSPICIOUS (Medium Risk)
+
+--- Simulated Header ---
+Return-Path: <hr.ops@company-portal-update.com>
+Received: from mail.company-portal-update.com [198.51.100.22]
+SPF: SOFTFAIL
+DKIM: none
+Subject: Updated Employee Benefits Form – Please Confirm by Friday
+
+--- Email Body ---
+Hi Team,
+
+As part of this year's benefits renewal, please confirm your details
+using the form linked below before Friday.
+
+Benefits Form: company-portal-update.com/benefits-form
+
+Reach out if you have questions.
+
+Thanks,
+HR Operations
+
+--- Indicators Identified ---
+1. Sender domain looks plausible but does not match the company's real domain.
+2. A link is used instead of the known internal HR system or an attachment.
+3. Mild time pressure ("by Friday") without extreme urgency.
+4. Otherwise consistent tone/formatting with normal internal communication —
+   not as clearly malicious as Samples 1–4, hence "Suspicious" rather than
+   confirmed "Phishing". Should be verified with HR through a known channel.

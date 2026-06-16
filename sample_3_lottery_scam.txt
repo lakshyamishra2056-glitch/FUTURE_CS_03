@@ -1,0 +1,29 @@
+SAMPLE 3 — LOTTERY / PRIZE-WIN SCAM
+Classification: PHISHING (High Risk)
+
+--- Simulated Header ---
+Return-Path: <claims@ms-lottery-intl.com>
+Received: from mail.ms-lottery-intl.com [185.220.101.7]
+SPF: FAIL
+DKIM: none
+Subject: Congratulations! You've Won $850,000 in the Microsoft Global Lottery
+
+--- Email Body ---
+Dear Winner,
+
+Your email address was randomly selected as one of the lucky winners
+of $850,000 USD in the Microsoft International Email Lottery Program.
+
+To claim your prize, reply with your full name, home address, phone
+number and a copy of your government-issued ID within 5 working days,
+or your prize will be forfeited.
+
+Mr. James Carter
+Claims Department
+
+--- Indicators Identified ---
+1. Unsolicited, too-good-to-be-true windfall never entered into.
+2. Direct request for government ID and personal address (identity theft).
+3. Sender domain has no genuine connection to the company impersonated.
+4. Artificial deadline ("5 working days") to pressure quick action.
+5. Legitimate companies do not run lotteries that randomly select email addresses.

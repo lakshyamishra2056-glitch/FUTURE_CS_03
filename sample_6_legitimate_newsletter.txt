@@ -1,0 +1,31 @@
+SAMPLE 6 — LEGITIMATE INTERNAL NEWSLETTER (REFERENCE EXAMPLE)
+Classification: SAFE (Low Risk)
+
+--- Simulated Header ---
+Return-Path: <itsecurity@company.com>
+Received: from mail.company.com [203.0.113.10]
+SPF: PASS
+DKIM: PASS
+Subject: This Month's IT Security Newsletter – June 2026
+
+--- Email Body ---
+Hello everyone,
+
+Here's this month's round-up: a reminder about the new VPN policy,
+scheduled maintenance this weekend, and recommended reading on
+current phishing trends.
+
+No login or personal information is required to read this newsletter.
+Reply to this email if you have questions.
+
+Thanks,
+IT Security Team
+
+--- Indicators Identified ---
+1. Sender domain matches the organisation's actual, verified domain.
+2. SPF and DKIM both pass.
+3. No request for credentials, payment details, or personal documents.
+4. No artificial urgency or threats.
+
+Included as a reference point so the contrast with the phishing
+samples above is clear.

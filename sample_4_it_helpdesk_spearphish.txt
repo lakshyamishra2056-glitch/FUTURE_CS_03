@@ -1,0 +1,29 @@
+SAMPLE 4 — SPEAR-PHISHING IT HELPDESK / PASSWORD EXPIRY
+Classification: PHISHING (High Risk)
+
+--- Simulated Header ---
+Return-Path: <bounce@outlook-support-center.com>
+Received: from mail.outlook-support-center.com [192.0.2.44]
+SPF: FAIL
+DKIM: FAIL
+X-Originating-Redirect: hxxp://track.bit-redir[.]net/r?id=ax91 (3 hops before landing page)
+Subject: Action Required: Your Password Expires Today
+
+--- Email Body ---
+Hello,
+
+Your corporate email password will expire in a few hours.
+
+To keep using your account without interruption, please verify your
+identity using the secure portal below.
+
+Keep My Access: outlook-support-center.com/verify-identity
+
+IT Support Team
+
+--- Indicators Identified ---
+1. Domain imitates a well-known brand but is not an owned Microsoft domain.
+2. Both SPF and DKIM fail authentication.
+3. Link redirects through multiple unrelated domains before the final landing page.
+4. Polished, error-free wording — good grammar does not guarantee legitimacy.
+5. Mild urgency around a routine event (password expiry) that feels plausible.
